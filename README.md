@@ -6,6 +6,9 @@ Send a message to an HipChat room
 
 Example
 --------
+
+Add HIPCHAT_TOKEN as deploy target or application environment variable.
+
 ```
     - wouter/hipchat-notify:
         token: $HIPCHAT_TOKEN
