@@ -1,6 +1,6 @@
 name: hipchat-notify
 version: 0.0.5
-description: Send a message to a HipChat room
+description: Send a message to an HipChat room
 properties:
   token:
     type: string
