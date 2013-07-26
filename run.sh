@@ -37,7 +37,7 @@ else
 fi
 
 
-if [ ! "$WERCKER_HIPCHAT_NOTIFY_ON" == "failed" ]; then
+if [ "$WERCKER_HIPCHAT_NOTIFY_ON" == "failed" ]; then
 	if [ "$WERCKER_RESULT" == "passed" ]; then
 		echo "Skipping.."
 		return 0
