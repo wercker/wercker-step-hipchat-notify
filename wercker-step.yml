@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 0.0.5
+version: 0.0.6
 description: Send a message to an HipChat room
 properties:
   token:
@@ -11,6 +11,10 @@ properties:
   from_name:
     type: string
     required: true
-  message:
+  failed-message:
     type: string
-    required: true
+  passed-message:
+    type: string
+  on:
+    type: string
+    default: allways
