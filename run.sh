@@ -39,9 +39,10 @@ fi
 
 if [ ! "$WERCKER_HIPCHAT_NOTIFY_ON" == "failed" ]; then
 	if [ "$WERCKER_RESULT" == "passed" ]; then
+		echo "Skipping.."
 		return 0
 	fi
 fi
 
-
+echo "run python"
 python "$WERCKER_STEP_ROOT/main.py" $WERCKER_HIPCHAT_NOTIFY_TOKEN $WERCKER_HIPCHAT_NOTIFY_ROOM_ID $WERCKER_HIPCHAT_NOTIFY_FROM_NAME "$WERCKER_HIPCHAT_NOTIFY_MESSAGE"
