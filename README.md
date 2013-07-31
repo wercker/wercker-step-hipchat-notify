@@ -8,7 +8,7 @@ Send a message to an HipChat room
 
 * `token` - Your HipChat token.
 * `room-id` - The id of the HipChat room.
-* `from_name` - The name that will appear in the room as sender.
+* `from-name` - The name that will appear in the room as sender.
 
 ### optional
 
@@ -29,6 +29,6 @@ build:
         - hipchat-notify:
             token: $HIPCHAT_TOKEN
             room_id: id
-            from_name: name
+            from-name: name
 
 ```
