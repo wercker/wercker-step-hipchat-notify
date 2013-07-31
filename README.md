@@ -23,12 +23,12 @@ Example
 
 Add HIPCHAT_TOKEN as deploy target or application environment variable.
 
-```
-build:
-    after-steps:
-        - hipchat-notify:
-            token: $HIPCHAT_TOKEN
-            room_id: id
-            from-name: name
 
-```
+    build:
+        after-steps:
+            - hipchat-notify:
+                token: $HIPCHAT_TOKEN
+                room_id: id
+                from-name: name
+
+
