@@ -1,6 +1,6 @@
 # hipchat-notify
 
-Send a message to an HipChat room
+Send a message to a HipChat room
 
 ## Options
 
