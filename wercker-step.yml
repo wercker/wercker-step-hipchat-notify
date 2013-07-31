@@ -5,10 +5,10 @@ properties:
   token:
     type: string
     required: true
-  room_id:
+  room-id:
     type: string
     required: true
-  from_name:
+  from-name:
     type: string
     required: true
   failed-message:
