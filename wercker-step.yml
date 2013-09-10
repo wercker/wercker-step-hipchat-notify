@@ -16,8 +16,14 @@ properties:
     default: wercker
   failed-message:
     type: string
+  failed-color:
+    type: string
+    default: red
   passed-message:
     type: string
+  passed-color:
+    type: string
+    default: green
   on:
     type: string
     default: always
