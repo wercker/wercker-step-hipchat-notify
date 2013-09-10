@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 0.1.4
+version: 0.1.5
 description: Send a message to a HipChat room
 keywords:
   - notification
@@ -19,11 +19,17 @@ properties:
   failed-color:
     type: string
     default: red
+  failed-notify:
+    type: string
+    default: "true"
   passed-message:
     type: string
   passed-color:
     type: string
     default: green
+  passed-notify:
+    type: string
+    default: "false"
   on:
     type: string
     default: always
