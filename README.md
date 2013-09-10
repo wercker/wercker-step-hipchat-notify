@@ -1,6 +1,6 @@
 # hipchat-notify
 
-Send a message to a HipChat room.
+Send a message to a HipChat room...with color!
 
 # Options
 
@@ -13,6 +13,8 @@ Send a message to a HipChat room.
 
 * `passed-message` - Use this option to override the default passed message.
 * `failed-message` -  Use this option to override the default failed message.
+* `passed-color` - Use this option to override the color of a passed message. Default is 'green'.
+* `failed-color` - Use this option to override the color of a failed message. Default is 'red'.
 * `from-name` - Use this option to override the name that will appear in the room as sender. Default is `wercker`.
 * `on` - Possible values: `always` and `failed`, default `always`
 
