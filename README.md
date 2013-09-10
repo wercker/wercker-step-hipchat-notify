@@ -58,10 +58,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
-## 0.1.5
+## 0.1.6
 
 - Add support for color for passed and failed messages (thanks adams-sarah)
 - Add support for 'notify' for passed and failed messages
+
+## 0.1.5
+
+*Broken*
 
 ## 0.1.4
 
