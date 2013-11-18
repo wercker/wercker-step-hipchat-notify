@@ -4,8 +4,7 @@ Send a message to a HipChat room... with color!
 
 # What's new
 
-- Add support for color for passed and failed messages (thanks adams-sarah)
-- Add support for 'notify' for passed and failed messages
+- Add links to application and build/deploy
 
 # Options
 
@@ -38,6 +37,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.0
+
+- Add links to application and build/deploy
 
 ## 0.1.6
 
