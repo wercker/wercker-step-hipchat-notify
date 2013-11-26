@@ -4,7 +4,7 @@ Send a message to a HipChat room... with color!
 
 # What's new
 
-- Add links to application and build/deploy
+- Add more icons to the default messages
 
 # Options
 
@@ -37,6 +37,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.1
+
+- Add more icons to the default messages
 
 ## 1.0.0
 
