@@ -4,7 +4,7 @@ Send a message to a HipChat room... with color!
 
 # What's new
 
-- Add more icons to the default messages
+- Remove emoticons introduced by version `1.0.1`.
 
 # Options
 
@@ -37,6 +37,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.2
+
+- Remove emoticons introduced by version `1.0.1`.
 
 ## 1.0.1
 
