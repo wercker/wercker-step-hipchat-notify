@@ -4,7 +4,7 @@ Send a message to a HipChat room... with color!
 
 # What's new
 
-- Remove emoticons introduced by version `1.0.1`.
+- Fix bug if `from-name` contains a space (thanks @anfedorov)
 
 # Options
 
@@ -37,6 +37,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.3
+
+- Fix bug if `from-name` contains a space (thanks @anfedorov)
 
 ## 1.0.2
 
