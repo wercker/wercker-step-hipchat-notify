@@ -9,7 +9,7 @@ Send a message to a HipChat room... with color!
 # Options
 
 * `token` (required) Your HipChat token.
-* `room-id` (required) The id of the HipChat room.
+* `room-id` (required) The id of the HipChat room. (retrieve yours from https://www.hipchat.com/rooms/ids)
 * `passed-message` (optional) The message which will be shown on a passed build or deploy.
 * `failed-message` (optional) The message which will be shown on a failed build or deploy.
 * `passed-color` (optional, default: `green`) The color of a passed build/deploy message in HipChat.
