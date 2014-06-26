@@ -33,3 +33,6 @@ properties:
   on:
     type: string
     default: always
+  target-branch:
+    type: string
+    default: "all"
