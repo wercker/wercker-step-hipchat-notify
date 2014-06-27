@@ -28,7 +28,7 @@ if not post_to_room:
             build_branch=build_branch,
             target_branch=target_branch
             )
-    sys.exit(1)
+    sys.exit(0)
 
 hipster = hipchat.HipChat(token=token)
 
