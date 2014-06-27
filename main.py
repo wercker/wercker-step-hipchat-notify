@@ -20,7 +20,7 @@ if str(notify) == 'true':
     notify = True
 if not target_branch in build_branch:
     post_to_room = False
-if target_branch == 'all':
+if target_branch == 'all' or target_branch == build_branch:
     post_to_room = True
 
 if not post_to_room:
