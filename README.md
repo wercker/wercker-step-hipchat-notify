@@ -31,6 +31,7 @@ build:
         token: $HIPCHAT_TOKEN
         room-id: id
         from-name: name
+        target-branch: master
 ```
 
 # License
@@ -38,6 +39,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.6
+
+- Add option target-branch
 
 ## 1.0.3
 
