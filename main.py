@@ -14,12 +14,21 @@ notify = str(sys.argv[6])
 target_branch = str(sys.argv[7])
 build_branch = str(sys.argv[8])
 
+post_to_room = False
+
 if str(notify) == 'true':
     notify = True
 if not target_branch in build_branch:
-    notify = False
+    post_to_room = False
 if target_branch == 'all':
-    notify = True
+    post_to_room = True
+
+if not post_to_room:
+    print 'Build branch:{build_branch} is not a target of hipchat-notify. target_branch: {target_branch}'.format(
+            build_branch=build_branch,
+            target_branch=target_branch
+            )
+    sys.exit(1)
 
 hipster = hipchat.HipChat(token=token)
 
