@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 1.0.5
+version: 1.0.5.1
 description: Send a message to a HipChat room
 keywords:
   - notification
