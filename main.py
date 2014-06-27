@@ -32,9 +32,13 @@ if not post_to_room:
 
 hipster = hipchat.HipChat(token=token)
 
-hipster.message_room( room_id=room_id,
-                      message_from=from_name,
-                      message=message,
-                      color=color,
-                      notify=notify
-                    )
+hipster.method('rooms/message',
+                method='POST',
+                parameters={
+                    'room_id': room_id,
+                    'from': from_name,
+                    'message': message,
+                    'color': color,
+                    'notify': notify
+                    }
+                )
