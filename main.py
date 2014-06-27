@@ -15,21 +15,17 @@ target_branch = str(sys.argv[7])
 build_branch = str(sys.argv[8])
 
 if str(notify) == 'true':
-    notify = '1'
+    notify = True
 if not target_branch in build_branch:
-    notify = '0'
+    notify = False
 if target_branch == 'all':
-    notify = '1'
+    notify = True
 
 hipster = hipchat.HipChat(token=token)
 
-hipster.method('rooms/message',
-                method='POST',
-                parameters={
-                    'room_id': room_id,
-                    'from': from_name,
-                    'message': message,
-                    'color': color,
-                    'notify': notify
-                    }
-                )
+hipster.message_room( room_id=room_id,
+                      message_from=from_name,
+                      message=message,
+                      color=color,
+                      notify=notify
+                    )
