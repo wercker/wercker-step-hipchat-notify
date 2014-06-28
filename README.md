@@ -1,5 +1,8 @@
 # hipchat-notify
 
+The original version of this application is [wercker-step-hipchat-notify](https://github.com/wercker/wercker-step-hipchat-notify).
+In this fork, there is an simple option which specifies the branch which is the target of notify.
+
 Send a message to a HipChat room... with color!
 
 # What's new
@@ -18,6 +21,7 @@ Send a message to a HipChat room... with color!
 * `failed-notify` (optional, default: `true`) If this is `true` the passed build/deploy message will make HipChat notify the user.
 * `from-name` (optional, default: `wercker`) Use this option to override the name that will appear in the room as sender.
 * `on` (optional, default: `always`) When should this step send a message. Possible values: `always` and `failed`.
+* `target-branch` (optional, default: `all`) The branch of a notify target.
 
 # Example
 
@@ -30,6 +34,7 @@ build:
         token: $HIPCHAT_TOKEN
         room-id: id
         from-name: name
+        target-branch: master
 ```
 
 # License
@@ -37,6 +42,14 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.91
+
+- Update README.
+
+## 1.0.6
+
+- Add option target-branch
 
 ## 1.0.3
 
