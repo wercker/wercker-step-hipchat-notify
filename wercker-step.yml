@@ -1,6 +1,6 @@
 name: hipchat-notify
-version: 1.0.9
-description: Send a message to a HipChat room
+version: 1.0.91
+description: Send a message to a HipChat room with very simple option which can can specify the branch which is the target of a notice.
 keywords:
   - notification
   - hipchat

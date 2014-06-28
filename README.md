@@ -21,7 +21,7 @@ Send a message to a HipChat room... with color!
 * `failed-notify` (optional, default: `true`) If this is `true` the passed build/deploy message will make HipChat notify the user.
 * `from-name` (optional, default: `wercker`) Use this option to override the name that will appear in the room as sender.
 * `on` (optional, default: `always`) When should this step send a message. Possible values: `always` and `failed`.
-* `target-branch` (optional, default: `all`) The branch of a build target.
+* `target-branch` (optional, default: `all`) The branch of a notify target.
 
 # Example
 
@@ -43,7 +43,7 @@ The MIT License (MIT)
 
 # Changelog
 
-## 1.0.9
+## 1.0.91
 
 - Update README.
 
