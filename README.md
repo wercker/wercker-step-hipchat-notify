@@ -1,7 +1,7 @@
 # hipchat-notify
 
 The original version of this application is [wercker-step-hipchat-notify](https://github.com/wercker/wercker-step-hipchat-notify).
-In this fork, there is an simple option which specifies the branch which is the target of building. 
+In this fork, there is an simple option which specifies the branch which is the target of notify.
 
 Send a message to a HipChat room... with color!
 
@@ -42,6 +42,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.9
+
+- Update README.
 
 ## 1.0.6
 
