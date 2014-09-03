@@ -1,10 +1,10 @@
 # hipchat-notify
 
-Send a message to a HipChat room... with color!
+The hipchat notify step sends a message based on the build or deploy outcome. It supports sending a message for passed and failed builds, and for passed and failed deploys. For the failed builds or deploys to work though, you need to add it to the after-steps section of a build or deploy, to ensure it gets run.
 
 # What's new
 
-- Fix bug if `from-name` contains a space (thanks @anfedorov)
+- Add support for `text` format.
 
 # Options
 
@@ -18,6 +18,7 @@ Send a message to a HipChat room... with color!
 * `failed-notify` (optional, default: `true`) If this is `true` the passed build/deploy message will make HipChat notify the user.
 * `from-name` (optional, default: `wercker`) Use this option to override the name that will appear in the room as sender.
 * `on` (optional, default: `always`) When should this step send a message. Possible values: `always` and `failed`.
+* `message-format` (optional, default: `html`) Send the noticiation in `html` or `text` message format. `html` message format support links, but does not support emoticons. `text` message format supports emoticons, but does not support links.
 
 # Example
 
@@ -37,6 +38,10 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.4
+
+- Add support for `text` message format.
 
 ## 1.0.3
 
