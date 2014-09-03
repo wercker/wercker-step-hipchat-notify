@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 1.0.4
+version: 1.0.5
 description: Send a message to a HipChat room
 keywords:
   - notification
@@ -30,6 +30,9 @@ properties:
   passed-notify:
     type: string
     default: "false"
+  message-format:
+    type: string
+    default: "html"
   on:
     type: string
     default: always
