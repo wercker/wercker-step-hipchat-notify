@@ -10,7 +10,7 @@ room_id = str(sys.argv[2])
 from_name = str(sys.argv[3])
 message = str(sys.argv[4])
 color = str(sys.argv[5])
-message_format = str(sys.argv[6])
+message_format = str(sys.argv[7])
 
 notify = '0'
 if str(sys.argv[6]) == 'true':
