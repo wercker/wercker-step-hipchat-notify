@@ -4,7 +4,7 @@ The hipchat notify step sends a message based on the build or deploy outcome. It
 
 # What's new
 
-- Add support for `text` format.
+- Using curl instead of python
 
 # Options
 
@@ -38,6 +38,12 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 1.0.6
+
+- Using curl instead of python
+- Using the [HipChat v2 Room Notification API](https://www.hipchat.com/docs/apiv2/method/send_room_notification)
+- `from-name` no longer needed. The name comes from the label you give when creating the HipChat room token.
 
 ## 1.0.5
 
