@@ -1,0 +1,14 @@
+box: releasequeue/ci-buildtools:0.3.5
+
+build:
+    steps:
+        - script:
+            name: Shellfire fatten script
+            code: |
+              git submodule update --init
+              cd lib/shellfire/fatten/
+              git submodule update --init
+              ./fatten -f -v --repository-path ../../../ --output-path ../../../output --bin-path / -- wercker_step_hipchat_notify
+              cd -
+              mv ./output/wercker_step_hipchat_notify ./run.sh
+              rm -rf output
