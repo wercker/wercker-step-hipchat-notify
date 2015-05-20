@@ -5,10 +5,14 @@ build:
         - script:
             name: Shellfire fatten script
             code: |
-              git submodule update --init
+              git submodule update --init --recursive
               cd lib/shellfire/fatten/
-              git submodule update --init
               ./fatten -f -v --repository-path ../../../ --output-path ../../../output --bin-path / -- wercker_step_hipchat_notify
               cd -
               mv ./output/wercker_step_hipchat_notify ./run.sh
               rm -rf output
+        - script:
+            name: Copy to output dir
+            code: |
+              cp ./run.sh $WERCKER_OUTPUT_DIR/run.sh
+
