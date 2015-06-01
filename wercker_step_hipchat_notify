@@ -28,8 +28,7 @@ _program()
         curl_http none '' POST $url  "$responseFile" Content-Type application/json Authorization "Bearer $WERCKER_HIPCHAT_NOTIFY_TOKEN"
 
         cat "$responseFile"
-        echo "\n$curl_httpStatusCode"
-
+        printf "\n$curl_httpStatusCode\n"
     }
 }
 

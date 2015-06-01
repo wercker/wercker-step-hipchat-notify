@@ -1,4 +1,4 @@
-box: releasequeue/ci-buildtools:0.3.5
+box: wercker/default
 
 build:
     steps:
@@ -9,10 +9,10 @@ build:
               cd lib/shellfire/fatten/
               ./fatten -f -v --repository-path ../../../ --output-path ../../../output --bin-path / -- wercker_step_hipchat_notify
               cd -
-              mv ./output/wercker_step_hipchat_notify ./run.sh
+              mv ./output/wercker_step_hipchat_notify ./app
               rm -rf output
+
         - script:
             name: Copy to output dir
             code: |
-              cp ./run.sh $WERCKER_OUTPUT_DIR/run.sh
-
+              cp "wercker-step.yml" "README.md" "LICENSE" "./app" "./run.sh" "$WERCKER_OUTPUT_DIR"
