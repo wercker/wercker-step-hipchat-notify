@@ -1,0 +1,18 @@
+box: wercker/default
+
+build:
+    steps:
+        - script:
+            name: Shellfire fatten script
+            code: |
+              git submodule update --init --recursive
+              cd lib/shellfire/fatten/
+              ./fatten -f -v --repository-path ../../../ --output-path ../../../output --bin-path / -- wercker_step_hipchat_notify
+              cd -
+              mv ./output/wercker_step_hipchat_notify ./app
+              rm -rf output
+
+        - script:
+            name: Copy to output dir
+            code: |
+              cp "wercker-step.yml" "README.md" "LICENSE" "./app" "./run.sh" "$WERCKER_OUTPUT_DIR"

@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 1.0.5
+version: 2.0.0
 description: Send a message to a HipChat room
 keywords:
   - notification
@@ -11,9 +11,6 @@ properties:
   room-id:
     type: string
     required: true
-  from-name:
-    type: string
-    default: wercker
   failed-message:
     type: string
   failed-color:
