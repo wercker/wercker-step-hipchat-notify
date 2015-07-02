@@ -61,6 +61,14 @@ build:
         room-id: id
 ```
 
+You may need to add sudo to your box:
+
+```
+  steps:
+    - install-packages:
+        packages: sudo
+```
+
 # License
 
 The MIT License (MIT)
