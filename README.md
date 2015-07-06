@@ -58,7 +58,7 @@ build:
   after-steps:
     - hipchat-notify:
         token: $HIPCHAT_TOKEN
-        room-id: id
+        room-id: "id"
 ```
 
 You may need to add sudo to your box:
