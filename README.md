@@ -30,8 +30,6 @@ message in HipChat.
 build/deploy message will make HipChat notify the user.
 * `failed-notify` (optional, default: `true`) If this is `true` the passed
 build/deploy message will make HipChat notify the user.
-* `from-name` (optional, default: `wercker`) Use this option to override the
-name that will appear in the room as sender.
 * `on` (optional, default: `always`) When should this step send a message.
 Possible values: `always` and `failed`.
 * `message-format` (optional, default: `html`) Send the noticiation in `html`
