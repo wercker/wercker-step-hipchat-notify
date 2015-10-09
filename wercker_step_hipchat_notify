@@ -72,7 +72,7 @@ _program_commandLine_parseInitialise()
     if core_variable_isSet "WERCKER_HIPCHAT_NOTIFY_ON" && core_variable_matches "$WERCKER_HIPCHAT_NOTIFY_ON" "failed"; then
         if core_variable_matches "$WERCKER_RESULT" "passed"; then
             echo "Skipping..."
-            return 0
+            exit 0
         fi
     fi
 
