@@ -1,0 +1,35 @@
+name: hipchat-notify
+version: 2.1.0
+summary: Send a message to a HipChat room
+rags:
+  - notification
+  - hipchat
+properties:
+- name: token
+  type: string
+  required: true
+- name: room-id
+  type: string
+  required: true
+- name: failed-message
+  type: string
+- name: failed-color
+  type: string
+  default: red
+- name: failed-notify
+  type: string
+  default: "true"
+- name: passed-message
+  type: string
+- name: passed-color
+  type: string
+  default: green
+- name: passed-notify
+  type: string
+  default: "false"
+- name: message-format
+  type: string
+  default: "html"
+- name: on
+  type: string
+  default: always
