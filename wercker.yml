@@ -1,7 +1,10 @@
-box: wercker/default
+box: debian:stable
 
 build:
     steps:
+        - install-packages:
+            packages: git sudo gawk procps
+
         - script:
             name: Shellfire fatten script
             code: |
@@ -15,4 +18,13 @@ build:
         - script:
             name: Copy to output dir
             code: |
-              cp "wercker-step.yml" "README.md" "LICENSE" "./app" "./run.sh" "$WERCKER_OUTPUT_DIR"
+              cp "step.yml" "README.md" "LICENSE" "./app" "./run.sh" "$WERCKER_OUTPUT_DIR"
+
+publish:
+  steps:
+    - install-packages:
+        packages: ca-certificates
+
+    - publish-step:
+        auth_token: $STEPS_AUTH_TOKEN
+        owner: wercker
