@@ -1,5 +1,5 @@
 name: hipchat-notify
-version: 2.1.0
+version: 2.1.1
 summary: Send a message to a HipChat room
 rags:
   - notification
